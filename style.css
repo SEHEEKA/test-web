@@ -1,0 +1,17 @@
+.my-span {
+    color: rgb(230, 23, 23);
+  font-size:150%;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: 'Gill Sans';
+}
+.h2{
+font-family: 'Arial Narrow';}
+
+a:visited{
+  color:blueviolet
+}
+  
+a:link{
+  color:grey
+}

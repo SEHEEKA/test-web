@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Access</title>
+
+    <style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+            background-color: brown;
+		}
+		label, input[type="submit"] {
+			margin: 10px;
+		}
+	</style>
+	<script>
+		function validateForm() {
+			var password = document.getElementById("password").value;
+			if (password.toLowerCase() === "may") {
+				return true; // allow form submission
+			} else {
+				alert("You failed me!.");
+				return false; // prevent form submission
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="love2.html" onsubmit="return validateForm()">
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
